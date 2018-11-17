@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Валерия Шадрина](https://up.htmlacademy.ru/htmlcss/23/user/920317).
-* Наставник: `Неизвестно`.
+* Наставник: [Макс Масленко](https://htmlacademy.ru/profile/biggus-dickus).
 
 ---
 
