@@ -2,11 +2,106 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
+    <title>Нёрдс. Главная страница</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <!-- start header -->
+    <header class="header">
+      <nav class="nav">
+        <a class="header-logo">
+          <img src="http://placehold.it/213x86" width="213" heigt="86" alt="Логотип дизайн-студии Нёрдс">
+        </a>
+        <ul class="navigation">
+          <li class="navigation-item"><a class="navigation-item_link" href="">Студия</a></li>
+          <li class="navigation-item"><a class="navigation-item_link" href="">Клиенты</a></li>
+          <li class="navigation-item"><a class="navigation-item_link" href="catalog.html">Магазин</a></li>
+          <li class="navigation-item"><a class="navigation-item_link" href="">Контакты</a></li>
+          <li class="navigation-item"><a class="navigation-item_link" href=""><img src="http://placehold.it/20x20" width="20" heigt="20" alt="Логотип дизайн-студии Нёрдс">Корзина</a></li> <!--будет ли отдельным элементом? -->
+        </ul>
+      </nav>
+    </header>
+    <!-- end header -->
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+    <main>
 
+      <h1 class="h1">Дизайн-студия из Краснодара.</h1>
+
+      <section class="offers">
+        <ul class="offers-list">
+          <li class="offers-item">
+            <h3 class="main-h3">ВЕБ-САЙТЫ</h3>
+            <p class="main-p">Мир никогда не будет прежним после того как увидит ваш сайт</p>
+            <button type="button" class ="button">Заказать</button>
+          </li>
+          <li class="offers-item">
+            <h3 class="main-h3">ПРИЛОЖЕНИЯ</h3>
+            <p class="main-p">Покорите топ-10 приложений в AppStore и Google Play</p>
+            <button type="button" class ="button">Заказать</button>
+          </li>
+          <li class="offers-item">
+            <h3 class="main-h3">ПРЕЗЕНТАЦИИ</h3>
+            <p class="main-p">Вы даже не подозреваете, насколько вы изумительны!</p>
+            <button type="button" class ="button">Заказать</button>
+          </li>
+        </ul>
+      </section>
+
+      <section class="">
+          <h2 class=main-h2><b class="main-b">Мы — маленькая, но гордая дизайн-студия из Краснодара.</b></h2>
+          <p class="main-p">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+
+            <p class="main-p">Выполняем заказы на разработку:</p>
+            <ul class="advantages-items">
+              <li class="advantages-item">Веб-сайтов любой сложности</li>
+              <li class="advantages-item">Мобильных приложений для iOS и Android</li>
+              <li class="advantages-item">Слайдшоу и видео для корпоративных презентаций</li>
+            </ul>
+      </section>
+
+      <article class="advantages">
+            <p class="main-p">С 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЁМ:</p>
+            <table class="advantages-table">
+              <tr class="advantages-table-line">
+                <td class="advantages-table-column">146%</td>
+                <td class="advantages-table-column">100%</td>
+                <td class="advantages-table-column">50%</td>
+              </tr>
+              <tr class="advantages-table-line">
+                <td class="advantages-table-column">Уровень самоотдачи</td>
+                <td class="advantages-table-column">Соблюдение сроков</td>
+                <td class="advantages-table-column">Мнимальная предоплата</td>
+              </tr>
+            </table>
+      </article>
+
+      <section class="partners">
+        <ul>
+          <li><a href = "https://htmlacademy.ru/intensive/htmlcss" target="_blank"><img source ="http://placehold.it/265x90" width="265" heigt="90" alt="htmlacademy.ru"></a></li>
+          <li><a href = "http://barbershop-borodinski.webflow.io/" target="_blank"><img source ="http://placehold.it/265x90" width="265" heigt="90" alt="barbershop-borodinski.webflow.io"></a></li>
+          <li><a href = "https://htmlacademy.ru/" target="_blank"><img source ="http://placehold.it/265x90" width="265" heigt="90" alt="pink"></a></li>
+          <li><a href = "https://htmlacademy.ru/" target="_blank"><img source ="http://placehold.it/265x90" width="265" heigt="90" alt="mishka"></a></li>
+        </ul>
+      </section>
+    </main>
+
+    <!-- start footer -->
+    <footer class="footer">
+
+      <section class="footer-map">
+        <!-- Какую карту лучше использовать? Видела в ТЗ, что не нужно её делать, но хотелось бы попробовать-->
+        <!-- <iframe src="https://yandex.ru/map-widget/v1/-/CBF6MCErGC" width="560" height="400" frameborder="1" allowfullscreen="true"></iframe> -->
+        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787247978!2d30.32086408039596!3d59.93871648196491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1543152914903" width="1724" height="807" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+      </section>
+
+      <ul class="footer-ss">
+        <li><a class="footer-ss-item" href = "https://vk.com" target="_blank"><img source ="http://placehold.it/28x28" width="28" heigt="28" alt="Вконтакте"></a></li>
+        <li><a class="footer-ss-item" href = "https://ru-ru.facebook.com/" target="_blank"><img source ="http://placehold.it/28x28" width="28" heigt="28" alt="Facebook"></a></li>
+        <li><a class="footer-ss-item" href = "https://www.instagram.com/" target="_blank"><img source ="http://placehold.it/28x28" width="28" heigt="28" alt="Instagram"></a></li>
+      </ul>
+      <h2 class="main-h2"><b class="main-b">Давайте дружить, это выгодно!</b></h2>
+      <p class="main-p">Скидка 10% для друзей из социальных сетей.</p>
+    </footer>
+    <!-- end footer -->
   </body>
 </html>
