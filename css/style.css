@@ -73,7 +73,11 @@ p.advantages-motto{
 .application-item,
 .application-item,
 .application-email,
-.application-letter,
+.application-letter {
+  /* weight: 760px;
+  height: 118px; */
+}
+
 .application-button {}
 
 .shop {}
