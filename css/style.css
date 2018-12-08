@@ -1,0 +1,110 @@
+html,
+body {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+}
+
+.header,
+.header-logo {}
+
+.nav {
+    font-size: 16px;
+
+}
+
+.navigation,
+.navigation-item,
+.navigation-item-link {
+
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.offers,
+.offers-list,
+.offers-item {
+      font-size: 24px;
+}
+p.offers-item{
+font-size: 16px;
+}
+
+.about,
+.about-slogan,
+.about-motto,
+.about-motto-list,
+.about-motto-item {
+
+}
+  b.about-slogan {
+    font-size: 45px;
+  }
+  p.about-motto {
+
+  }
+
+.advantages,
+.advantages-motto,
+.advantages-list {
+    font-size: 45px;
+}
+p.advantages-motto{
+  font-size: 16px;
+}
+.percent {}
+
+.partners,
+.partners-list,
+.partners-item {}
+
+.application,
+.application-item,
+.application-item,
+.application-email,
+.application-letter,
+.application-button {}
+
+.shop {}
+
+.products,
+.products-list,
+.products-item,
+.products-link {}
+
+.footer,
+.footer-map,
+.footer-ss,
+.footer-ss-item {}
+
+.contacts,
+.contacts-address,
+.contacts-phone {}
+  .contacts-name {
+    font-size: 18px;
+  }
+
+.appeal {
+  font-size: 36px;
+}
+
+.discount {}
+
+.modal {
+  /* display: none */
+}
+.modal-close,
+.modal-open {
+  font-size: 16px;
+}

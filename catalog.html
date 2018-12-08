@@ -1,42 +1,47 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Нёрдс. Каталог</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    <!-- start header -->
-    <header class="header">
-      <nav class="nav" aria-label="Навигация">
-        <div class="header-logo">
-          <img src="img/nerds-logo.svg" width="213" heigt="86" alt="Логотип дизайн-студии Нёрдс">
-        </div>
-        <ul class="navigation">
-          <li class="navigation-item">
-            <a class="navigation-item-link" href="#">Студия</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-item-link" href="#">Клиенты</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-item-link" href="catalog.html">Магазин</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-item-link" href="#">Контакты</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-item-link" href="#">Корзина</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <!-- end header -->
 
-    <main>
-      <!-- start content -->
-      <h1 class="shop">Магазин готовых шаблонов</h1>
-      <section class="products">
+<head>
+  <meta charset="utf-8">
+  <title>Нёрдс. Каталог</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+</head>
+
+<body>
+  <!-- start header -->
+  <header class="header">
+    <nav class="nav">
+      <a class="header-logo" href="index.html">
+        <img src="img/nerds-logo.svg" width="213" heigt="86" alt="Логотип дизайн-студии Нёрдс">
+      </a>
+      <!-- ВОТ ЭТО МЕНЯЙ С ОСТОРОЖНОСТЬЮ -->
+      <ul class="navigation">
+        <li class="navigation-item">
+          <a class="navigation-item-link" href="index.html">Студия</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-item-link" href="#">Клиенты</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-item-link">Магазин</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-item-link" href="#">Контакты</a>
+        </li>
+      </ul>
+      <div class="navigation-item">
+        <a class="navigation-item-link" href="#">Корзина</a>
+      </div>
+    </nav>
+  </header>
+  <!-- end header -->
+
+  <main>
+    <!-- start content -->
+    <h1 class="shop">Магазин готовых шаблонов</h1>
+    <section class="products">
       <ul class="products-list">
         <li class="products-item"><a class="products-link" href=""><img src="img/img-sedona.png" width="360" heigt="576" alt="Пример сайта 1"></a></li>
 
@@ -49,69 +54,70 @@
         <li class="products-item"><a class="products-link" href=""><img src="img/img-aplus.png" width="360" heigt="576" alt="Пример сайта 5"></a></li>
 
         <li class="products-item"><a class="products-link" href=""><img src="img/img-kvast.png" width="360" heigt="576" alt="Пример сайта 6"></a></li>
-        </ul>
+      </ul>
+    </section>
+    <!-- end content -->
+  </main>
+
+
+  <!-- start modal -->
+  <section class="modal">
+    <h2>Напишите нам</h2>
+    <form class="application" action="https://echo.htmlacademy.ru" method="post" name="application">
+      <p class="application-item">
+        <label for="application-name" id="name">Ваше имя:
+          <input id="name" class="application-name" type="text" name="name" placeholder="Имя Фамилия"></label>
+      </p>
+      <p class="application-item">
+        <label for="application-email" id="email">Ваш email:
+          <input id="email" class="application-email" type="email" name="email" placeholder="email@example.com" required></label>
+      </p>
+      <p class="application-item">
+        <label for="application-letter" id="letter">Текст письма:
+          <textarea id="letter" class="application-letter" name="letter" placeholder="В свободной форме"></textarea></label>
+      </p>
+      <button class="application-button" type="submit">Отправить</button>
+    </form>
+    <button class="modal-close" type="button">Закрыть</button>
+  </section>
+  <!-- end modal -->
+
+  <!-- start footer -->
+  <footer class="footer">
+    <section class="footer-map">
+      <h2 class="visually-hidden">Наш адрес</h2>
+      <img src="img/map.png" width="1440" height="416" alt="Адрес компании: город Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
+      <section class="contacts">
+        <p class="contacts-name">Nёrds design studio</p>
+        <p class="contacts-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <p class="contacts-phone">тел. +7 (812) 275-75-75</p>
+        <a class="modal-open">Напишите нам</a>
       </section>
-      <!-- end content -->
-    </main>
-
-
-      <!-- start modal -->
-      <section class="modal">
-        <h2>Напишите нам</h2>
-        <form class="application" action="https://echo.htmlacademy.ru" method="post" name="application">
-          <p class="application-item">
-            <label for="application-name">Ваше имя:</label>
-            <input class="application-name" type="text" name="name" value="" placeholder="Имя Фамилия" required>
-          </p>
-          <p class="application-item">
-            <label for="application-email">Ваш email:</label>
-            <input class="application-email" type="text" name="email" value="" placeholder="email@example.com" required>
-          </p>
-          <p class="application-item">
-            <label for="application-letter">Текст письма:</label>
-            <textarea class="application-letter" name="letter">В свободной форме</textarea>
-          </p>
-          <button class="application-button" type="submit">Отправить</button>
-        </form>
-        <button class="modal-close" type="button">Закрыть</button>
-      </section>
-      <!-- end modal -->
-
-      <!-- start footer -->
-      <footer class="footer">
-        <section class="footer-map">
-          <h2 class="visually-hidden">Наш адрес</h2>
-              <img src="img/map.png" width="1440" height="416" alt="Адрес компании: город Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
-              <section class="contacts">
-                  <p class="contacts-name">NЁRDS DESIGN STUDIO</p>
-                  <p class="contacts-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-                  <p class="contacts-phone">тел. +7 (812) 275-75-75</p>
-                  <button class="modal-open" type="button">Напишите нам</button>
-              </section>
-        <!--  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787247978!2d30.32086408039596!3d59.93871648196491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1543152914903"
+      <!--  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787247978!2d30.32086408039596!3d59.93871648196491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1543152914903"
             width="1000" height="400" style="border:0" allowfullscreen></iframe> -->
-        </section>
+    </section>
 
-        <ul class="footer-ss">
-          <li>
-            <a class="footer-ss-item" href="https://vk.com" target="_blank">
-              <img src="img/vk-icon.svg" width="28" heigt="28" alt="Мы в Вконтакте">
-            </a>
-          </li>
-          <li>
-            <a class="footer-ss-item" href="https://ru-ru.facebook.com/" target="_blank">
-              <img src="img/fb-icon.svg" width="28" heigt="28" alt="Мы в Фейсбуке">
-            </a>
-          </li>
-          <li>
-            <a class="footer-ss-item" href="https://www.instagram.com/" target="_blank">
-              <img src="img/insta-icon.svg" width="28" heigt="28" alt="Мы в Инстаграме">
-            </a>
-          </li>
-        </ul>
-          <b class="appeal">Давайте дружить, это выгодно!</b>
-        <p class="discount">Скидка 10% для друзей из социальных сетей.</p>
-      </footer>
-      <!-- end footer -->
-  </body>
+    <ul class="footer-ss">
+      <li>
+        <a class="footer-ss-item" href="https://vk.com" target="_blank">
+          <img src="img/vk-icon.svg" width="28" heigt="28" alt="Мы в Вконтакте">
+        </a>
+      </li>
+      <li>
+        <a class="footer-ss-item" href="https://ru-ru.facebook.com/" target="_blank">
+          <img src="img/fb-icon.svg" width="28" heigt="28" alt="Мы в Фейсбуке">
+        </a>
+      </li>
+      <li>
+        <a class="footer-ss-item" href="https://www.instagram.com/" target="_blank">
+          <img src="img/insta-icon.svg" width="28" heigt="28" alt="Мы в Инстаграме">
+        </a>
+      </li>
+    </ul>
+    <b class="appeal">Давайте дружить, это выгодно!</b>
+    <p class="discount">Скидка 10% для друзей из социальных сетей.</p>
+  </footer>
+  <!-- end footer -->
+</body>
+
 </html>
